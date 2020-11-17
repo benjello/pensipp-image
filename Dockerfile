@@ -14,7 +14,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
     roxygen2
 
 
-RUN apt --yes install texlive-full latexmk pandoc r-base r-cran-tidyverse r-cran-rmarkdown python-pip
+RUN apt --yes install texlive-full latexmk pandoc r-base r-cran-tidyverse r-cran-rmarkdown python3-pip
 RUN Rscript -e 'install.packages("configr")'
 
 ENV LANG C.UTF-8

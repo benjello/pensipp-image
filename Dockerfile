@@ -16,5 +16,6 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
 
 RUN apt --yes install texlive-full latexmk pandoc r-base r-cran-tidyverse r-cran-rmarkdown python3-pip
 RUN Rscript -e 'install.packages("configr")'
+RUN Rscript -e 'install.packages("Rd2md")'
 
 ENV LANG C.UTF-8
